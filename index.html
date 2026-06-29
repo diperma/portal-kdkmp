@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observasi 1.061 KDKMP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --hijau: #2d7a3c;
+      --hijau-gelap: #236130;
+      --hijau-muda: #e8f5e9;
+      --kuning: #f5c518;
+      --teks: #333;
+      --teks-abu: #666;
+      --border: #e0e0e0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f6f4;
+      color: var(--teks);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--hijau);
+      color: white;
+      text-align: center;
+      padding: 32px 20px 28px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      margin-top: 6px;
+      font-weight: 400;
+    }
+
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 36px 20px 48px;
+      width: 100%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 767px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      padding: 28px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(45,122,60,0.15);
+    }
+
+    .card:active {
+      transform: translateY(-1px);
+    }
+
+    .card .ikon {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--hijau);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .card p {
+      font-size: 0.875rem;
+      color: var(--teks-abu);
+      line-height: 1.55;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+
+    .tombol {
+      display: block;
+      width: 100%;
+      padding: 11px 16px;
+      background: var(--hijau);
+      color: white;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-align: center;
+      transition: background 0.15s ease;
+    }
+
+    .card:hover .tombol {
+      background: var(--hijau-gelap);
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 0.78rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Observasi 1.061 KDKMP</h1>
+  <p>Selasa, 30 Juni 2026 s.d. Sabtu, 4 Juli 2026</p>
+</header>
+
+<main>
+  <div class="grid">
+
+    <a class="card" href="https://docs.google.com/spreadsheets/d/1aA9rVqlpA2l_nEu6mRYFMsMF9OD5Cj7b/edit?pli=1&gid=1346897773#gid=1346897773" target="_blank" rel="noopener noreferrer">
+      <div class="ikon">📍</div>
+      <h2>Daftar Lokasi Strategis</h2>
+      <p>Lihat daftar lokasi strategis dan tidak strategis KDKMP</p>
+      <span class="tombol">Buka Daftar</span>
+    </a>
+
+    <a class="card" href="https://diperma.github.io/observasi-kdkmp/" target="_blank" rel="noopener noreferrer">
+      <div class="ikon">📋</div>
+      <h2>Form Observasi</h2>
+      <p>Isi form pengisian observasi cek fisik KDKMP</p>
+      <span class="tombol">Buka Form</span>
+    </a>
+
+    <a class="card" href="https://docs.google.com/spreadsheets/d/1YFRowgs2TOoEUoMUlMRXZYejov-rA6Q3ZasCXyfOvRg/edit?gid=750839078#gid=750839078" target="_blank" rel="noopener noreferrer">
+      <div class="ikon">📤</div>
+      <h2>Unggah Kertas Kerja</h2>
+      <p>Unggah kertas kerja dan dokumentasi hasil observasi</p>
+      <span class="tombol">Buka Unggahan</span>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  KDKMP &copy; 2026
+</footer>
+
+</body>
+</html>
